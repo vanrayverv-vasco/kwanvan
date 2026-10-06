@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Van Rayver Villaruz · BSIT Student & Aspiring Web Developer</title>
+  <meta name="description" content="Personal portfolio of Van Rayver Villaruz, a BSIT student and aspiring web developer from Nueva Vizcaya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== STICKY NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">VR</span>
+        <span class="logo-text">VanRayver</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Available for collaboration
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Van Rayver</span><br>
+            <span class="gradient-text">Villaruz</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="typewriter" id="typewriter"></span>
+            <span class="cursor">|</span>
+          </p>
+          <p class="hero-description">
+            Building my skills in web development, programming, and technology —
+            one project at a time. Currently pursuing a BSIT degree and passionate
+            about creating clean, functional web experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Featured Project</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-title">
+                <i class="fas fa-code"></i> developer.js
+              </span>
+              <span class="code-actions">
+                <i class="fas fa-minus"></i>
+                <i class="fas fa-expand"></i>
+                <i class="fas fa-times"></i>
+              </span>
+            </div>
+            <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-string">'Van Rayver'</span>,
+  <span class="c-prop">role</span>: <span class="c-string">'BSIT Student'</span>,
+  <span class="c-prop">location</span>: <span class="c-string">'Nueva Vizcaya'</span>,
+  <span class="c-prop">skills</span>: [
+    <span class="c-string">'HTML'</span>, <span class="c-string">'CSS'</span>, <span class="c-string">'JavaScript'</span>,
+    <span class="c-string">'PHP'</span>, <span class="c-string">'MySQL'</span>
+  ],
+  <span class="c-fn">learn</span>: () => <span class="c-string">'always 🌱'</span>
+};</code></pre>
+            <div class="code-footer">
+              <span class="code-status"><i class="fas fa-circle"></i> main</span>
+              <span class="code-lang">JavaScript</span>
+            </div>
+          </div>
+          <div class="floating-chip chip-1"><i class="fab fa-html5"></i></div>
+          <div class="floating-chip chip-2"><i class="fab fa-js"></i></div>
+          <div class="floating-chip chip-3"><i class="fab fa-css3-alt"></i></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-num">01</span> About</span>
+          <h2 class="section-title">A little about me</h2>
+          <p class="section-desc">Who I am, what I do, and what drives me forward</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-card-icon"><i class="fas fa-user-graduate"></i></div>
+            <h3>Who I Am</h3>
+            <p>I am a Bachelor of Science in Information Technology (BSIT) student with a strong interest in web development, programming, and everything IT. I love exploring how websites and applications are built from the ground up.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-card-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>My Goal</h3>
+            <p>To sharpen my programming skills and gain hands-on experience by creating useful, user-friendly systems. I'm always excited to learn new tools and improve my craft.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-card-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>What Drives Me</h3>
+            <p>I enjoy solving real-world problems with technology and turning ideas into working software. Every project is a chance to grow and build something meaningful.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-num">02</span> Education</span>
+          <h2 class="section-title">My learning journey</h2>
+          <p class="section-desc">The academic path that shaped my foundation</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="timeline-date">Present</span>
+                <span class="timeline-status present">In Progress</span>
+              </div>
+              <h3>Nueva Vizcaya State University</h3>
+              <p class="timeline-sub">Bachelor of Science in Information Technology (BSIT)</p>
+              <p class="timeline-desc">Focused on programming, web development, databases, and information systems.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="timeline-date">Completed</span>
+                <span class="timeline-status completed">Graduated</span>
+              </div>
+              <h3>Saint Mary's University</h3>
+              <p class="timeline-sub">High School</p>
+              <p class="timeline-desc">Built foundational skills in science, math, and computer literacy.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <i class="fas fa-child"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <span class="timeline-date">Completed</span>
+                <span class="timeline-status completed">Graduated</span>
+              </div>
+              <h3>Saint Mary's University</h3>
+              <p class="timeline-sub">Elementary School</p>
+              <p class="timeline-desc">Where curiosity and a love for learning first began.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-num">03</span> Projects</span>
+          <h2 class="section-title">Things I've built</h2>
+          <p class="section-desc">A showcase of my work and what I'm currently learning</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <div class="project-thumb-bg"></div>
+              <i class="fas fa-map-marked-alt project-thumb-icon"></i>
+              <span class="project-badge">Featured</span>
+            </div>
+            <div class="project-body">
+              <h3>Nueva Vizcaya Tour Guide Website</h3>
+              <p>A tourism website designed to showcase destinations and natural attractions in Nueva Vizcaya. It provides visitors with useful information and helps promote local attractions.</p>
+              <div class="tech-tags">
+                <span><i class="fab fa-html5"></i> HTML</span>
+                <span><i class="fab fa-css3-alt"></i> CSS</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+              </div>
+              <!-- Replace # with your actual project URL -->
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                View Project <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 
+            To add more projects, copy the <article class="project-card reveal"> block
+            and update the icon, title, description, tech tags, and link.
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-num">04</span> Skills</span>
+          <h2 class="section-title">Tech stack & interests</h2>
+          <p class="section-desc">Technologies I'm learning and working with</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <span class="skill-name">HTML</span>
+            <span class="skill-tag">Web Structure</span>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <span class="skill-name">CSS</span>
+            <span class="skill-tag">Styling & Design</span>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-tag">Web Functionality</span>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fab fa-php"></i></div>
+            <span class="skill-name">PHP</span>
+            <span class="skill-tag">Backend Development</span>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <span class="skill-name">MySQL</span>
+            <span class="skill-tag">Database</span>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <span class="skill-name">Git</span>
+            <span class="skill-tag">Version Control</span>
+          </div>
+          <div class="skill-item reveal">
+            <div class="skill-icon"><i class="fab fa-github"></i></div>
+            <span class="skill-name">GitHub</span>
+            <span class="skill-tag">Code Repository</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><span class="tag-num">05</span> Contact</span>
+          <h2 class="section-title">Let's connect</h2>
+          <p class="section-desc">Have a question or want to work together? Send me a message.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-info reveal">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-body">
+                <small>Email</small>
+                <a href="mailto:vanrayvervillaruz@gmail.com">vanrayvervillaruz@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-body">
+                <small>Phone</small>
+                <a href="tel:+639676219322">0967 621 9322</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-pin"></i></div>
+              <div class="info-body">
+                <small>Location</small>
+                <span>Bayombong, Nueva Vizcaya</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fab fa-facebook"></i></div>
+              <div class="info-body">
+                <small>Facebook</small>
+                <!-- Replace # with your Facebook profile URL -->
+                <a href="#" target="_blank" rel="noopener">Van Rayver Villaruz</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fab fa-github"></i></div>
+              <div class="info-body">
+                <small>GitHub</small>
+                <a href="https://github.com/avanverv-vasco" target="_blank" rel="noopener">avanverv-vasco</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Juan Dela Cruz" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="juan@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="6" placeholder="Tell me about your project or just say hi..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-feedback" id="formFeedback" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">VR</span>
+          <span class="logo-text">VanRayver</span>
+        </a>
+        <p>BSIT Student · Aspiring Web Developer</p>
+      </div>
+      <p class="footer-copy">© 2026 Van Rayver Villaruz. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/avanverv-vasco" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <!-- Replace # with your Facebook profile URL -->
+        <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:vanrayvervillaruz@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
